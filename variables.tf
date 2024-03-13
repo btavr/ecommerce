@@ -40,3 +40,10 @@ variable "private_data_subnet_az2_cidr" {
     description = "private data subnet cidr block"
     type = string
 }
+
+#security group variable
+variable "ssh_location" {
+    default = "0.0.0.0/0" # privIp pubIp 148.63.30.160
+    description = "the ip to ssh into ec2"
+    type = string
+}
